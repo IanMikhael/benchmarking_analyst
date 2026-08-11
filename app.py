@@ -45,20 +45,20 @@ def get_field(data, key, vendor, default=""):
 # 2. FEATURE GAP MATRIX
 # =========================================================
 DEFAULT_FEATURES = {
-    "RME": ["rme", "rekam medis"],
-    "Antrean/Booking": ["antrean", "booking"],
-    "Kasir/POS/Tagihan": ["kasir", "tagihan", "pos"],
-    "Farmasi/Stok Obat": ["farmasi", "obat", "stok"],
-    "Inventory": ["inventory"],
-    "Pengingat Otomatis": ["pengingat"],
-    "White-label / Branding Sendiri": ["white-label", "white label", "branding"],
-    "Modular / Bayar Sesuai Fitur": ["modular"],
-    "Membership Pasien": ["membership"],
-    "ICD-9/ICD-10": ["icd"],
+    "RME": ["rme", "rekam medis", "simrs"],
+    "Antrean/Booking": ["antrean", "antrian", "booking", "reservasi"],
+    "Kasir/POS/Tagihan": ["kasir", "tagihan", "pos", "billing", "pembayaran"],
+    "Farmasi/Stok Obat": ["farmasi", "obat", "stok", "apotek", "bhp"],
+    "Inventory": ["inventory", "inventori", "gudang", "warehouse"],
+    "Pengingat Otomatis": ["pengingat", "reminder", "notifikasi", "otomatis"],
+    "White-label / Branding Sendiri": ["white-label", "white label", "branding", "kustom logo"],
+    "Modular / Bayar Sesuai Fitur": ["modular", "sesuai kebutuhan", "kustom modul"],
+    "Membership Pasien": ["membership", "member", "poin", "loyalty"],
+    "ICD-9/ICD-10": ["icd", "icd-9", "icd-10"],
     "Integrasi SATUSEHAT": ["satu sehat", "satusehat"],
-    "Integrasi BPJS/PCare": ["bpjs", "pcare", "p-care", "jkn"],
-    "Mobile App": ["mobile", "smartphone", " app "],
-    "Multi-klinik / Multi-role": ["multi-klinik", "multi klinik", "multi-role", "banyak klinik", "multi role"],
+    "Integrasi BPJS/PCare": ["bpjs", "pcare", "p-care", "jkn", "vclaim"],
+    "Mobile App": ["mobile", "smartphone", " app ", "android", "ios"],
+    "Multi-klinik / Multi-role": ["multi-klinik", "multi klinik", "multi-role", "banyak klinik", "multi role", "multibranch", "cabang", "multi-tenant", "multi tenant"],
 }
 FEATURE_SOURCE_FIELDS = ["Fitur Utama", "Fitur Unggulan / Diferensiasi", "Model Deployment (Cloud/On-Premise)",
                           "Platform (Web/Mobile/Desktop)"]
